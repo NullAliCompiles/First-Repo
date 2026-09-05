@@ -12,5 +12,8 @@ year_input = input("Enter the year: ")
 date = datetime.strptime(f"{year_input}-{month_input}-{day_input}", "%Y-%m-%d")
 #idk what this part means but thx copilot ig
 
+#Doing a branch thing, I'll add a week number as well
+week_number = date.isocalendar()[1]
 day_of_week = days[date.weekday()]
-print(f"{year_input}-{month_input}-{day_input} is on {day_of_week}.")
+
+print(f"{year_input}-{month_input}-{day_input} is on {day_of_week}, week {week_number}.")
